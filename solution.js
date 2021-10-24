@@ -60,8 +60,8 @@ const logWordsWithExclamation = () => {
 // Map
 
 const arrayValuesTimes100TimesIndex = () => {
-  return nums.every(num => {
-    return num * 100
+  return nums.map((num, i)=> {
+    return num * i * num
   })
 };
 
