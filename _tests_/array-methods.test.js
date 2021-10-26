@@ -24,7 +24,7 @@ describe("Array Methods", () => {
   });
 
   test("Every word is shorter than 7 characters", () => {
-    expect(/\.every/.test(isEveryWordShorterThan7().toString())).toBe(false);
+    expect(/\.every/.test(isEveryWordShorterThan7.toString())).toBe(true);
     expect(isEveryWordShorterThan7(words)).toBe(true);
   });
 
@@ -71,7 +71,7 @@ describe("Array Methods", () => {
   test("A new array of values that are multiplied by their index number and 100", () => {
     expect(/\.map/.test(arrayValuesTimes100TimesIndex.toString())).toBe(true);
     expect(arrayValuesTimes100TimesIndex(nums)).toStrictEqual([
-      0, 4, 18, 48, 100, 180, 294, 448, 648, 900, 0,
+      0, 200, 600, 1200, 2000, 3000, 4200, 5600, 7200, 9000, 0
     ]);
   });
 
