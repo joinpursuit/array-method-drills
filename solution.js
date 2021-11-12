@@ -43,7 +43,7 @@ const logWordsWithExclamation = () => {
 // Map
 
 const arrayValuesTimes100TimesIndex = () => {
-  return nums.map(num => nums *100*num )
+  return nums.map((num,i) => num*num * i )
 };
 
 const arrayWordsUpcased = () => {
