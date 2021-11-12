@@ -12,6 +12,17 @@ const words = [
   "dog",
 ];
 
+function array() {
+  for (let i = 0; i < words.length; i ++){
+    console.log(words)
+    if (words[i]) {
+      console.log(words[i])
+      return i
+      console.log(words[i])
+  }
+  }
+}
+console.log(array(words))
 module.exports = {
   nums,
   words,
