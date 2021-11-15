@@ -8,7 +8,9 @@ const isEveryNumGreaterThan2 = () => {
 };
 
 const isEveryWordShorterThan7 = () => {
-  //
+  return words.every((el) => {
+    return el.length < 7
+  })
 };
 
 // Filter
