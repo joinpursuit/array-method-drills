@@ -58,21 +58,29 @@ const logWordsWithExclamation = () => {
 // Map
 
 const arrayValuesTimes100TimesIndex = () => {
-  //
+  return nums.map((el, i) => {
+    return el * el * i
+  })
 };
 
 const arrayWordsUpcased = () => {
-  //
+  return words.map((el) => {
+    return el.toUpperCase()
+  })
 };
 
 // Some
 
 const areSomeNumsDivisibleBy7 = () => {
-  //
+  return nums.some((el) => {
+    return el % 7 === 0
+  })
 };
 
 const doSomeWordsHaveAnA = () => {
-  //
+  return words.some((el) => {
+    return el.includes("a")
+  })
 };
 
 module.exports = {
