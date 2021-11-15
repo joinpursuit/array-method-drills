@@ -44,7 +44,9 @@ const firstWordLongerThan4Char = () => {
 // For Each
 
 const logValuesTimes3 = () => {
-  //
+  nums.forEach((el) => {
+    return el * 3
+  })
 };
 
 const logWordsWithExclamation = () => {
