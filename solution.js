@@ -2,7 +2,9 @@ const { nums, words } = require("./data/data.js");
 
 // Every
 const isEveryNumGreaterThan2 = () => {
-  //
+  return nums.every((el) => {
+    el > 2
+  })
 };
 
 const isEveryWordShorterThan7 = () => {
