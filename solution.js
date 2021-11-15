@@ -22,7 +22,9 @@ const arrayLessThan5 = () => {
 };
 
 const arrayOddLengthWords = () => {
-  //
+  return words.filter((el) => {
+    return el.length % 2 !== 0
+  })
 };
 
 // Find
