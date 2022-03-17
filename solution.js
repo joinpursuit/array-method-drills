@@ -60,88 +60,88 @@ const doSomeWordsHaveAnA = () => {
 };
 
 
-// Reduce
-const sumAllNums = () => {
-  return nums.reduce((total, amount) => total + amount);
-};
+// // Reduce
+// const sumAllNums = () => {
+//   return nums.reduce((total, amount) => total + amount);
+// };
 
-const concatAllWords = () => {
-  return words.reduce((concat, word) => concat + word);
-};
+// const concatAllWords = () => {
+//   return words.reduce((concat, word) => concat + word);
+// };
 
-console.log(sumAllNums(nums));
-console.log(concatAllWords(words));
-
-
-// Sort
-const sortNumAscending = () => {
-  return nums.sort((a, b) => a - b);
-};
-
-const sortNumDescending = () => {
-  return nums.sort((a, b) => b - a);
-};
-
-console.log(sortNumAscending(nums));
-console.log(sortNumDescending(nums));
-
-const sortWordsAscending = () => {
-  return words.map(word => word.toLowerCase()).sort();
-}
-
-const sortWordsDescending = () => {
-  return words.map(word => word.toLowerCase()).sort((a, b) => {
-    if (a > b) {
-      return -1;
-    }
-    if (b > a) {
-      return 1;
-    }
-    return 0;
-  });
-};
-
-console.log(sortWordsAscending(words));
-console.log(sortWordsDescending(words));
+// console.log(sumAllNums(nums));
+// console.log(concatAllWords(words));
 
 
-// Array Methods Challenge Problems
+// // Sort
+// const sortNumAscending = () => {
+//   return nums.sort((a, b) => a - b);
+// };
 
-function isPanagram(sentence) {
-  let alphabet = "abcdefghijklmnopqrstuvwxyz";
-  let letters = sentence.join("").split("");
+// const sortNumDescending = () => {
+//   return nums.sort((a, b) => b - a);
+// };
 
-  for(let i=0; i<alphabet.length; i++){
-    if(!letters.includes(alphabet[i])){
-      return false;
-    }
-  }
-  return true;
-};
+// console.log(sortNumAscending(nums));
+// console.log(sortNumDescending(nums));
 
-console.log(isPanagram(words));
+// const sortWordsAscending = () => {
+//   return words.map(word => word.toLowerCase()).sort();
+// }
 
-// Working with data
+// const sortWordsDescending = () => {
+//   return words.map(word => word.toLowerCase()).sort((a, b) => {
+//     if (a > b) {
+//       return -1;
+//     }
+//     if (b > a) {
+//       return 1;
+//     }
+//     return 0;
+//   });
+// };
 
-function productsFilteredLessThan10(products){
-  return products.filter(product => product.price < 10);
-};
+// console.log(sortWordsAscending(words));
+// console.log(sortWordsDescending(words));
 
-console.log(productsFilteredLessThan10(products));
 
-function sortProductsByName() {
-  return products.sort((a, b) => {
-    if (a.name > b.name) {
-      return 1;
-    }
-    if (b.name > a.name) {
-      return -1;
-    }
-    return 0;
-  });
-};
+// // Array Methods Challenge Problems
 
-console.log(sortProductsByName(products))
+// function isPanagram(sentence) {
+//   let alphabet = "abcdefghijklmnopqrstuvwxyz";
+//   let letters = sentence.join("").split("");
+
+//   for(let i=0; i<alphabet.length; i++){
+//     if(!letters.includes(alphabet[i])){
+//       return false;
+//     }
+//   }
+//   return true;
+// };
+
+// console.log(isPanagram(words));
+
+// // Working with data
+
+// function productsFilteredLessThan10(products){
+//   return products.filter(product => product.price < 10);
+// };
+
+// console.log(productsFilteredLessThan10(products));
+
+// function sortProductsByName() {
+//   return products.sort((a, b) => {
+//     if (a.name > b.name) {
+//       return 1;
+//     }
+//     if (b.name > a.name) {
+//       return -1;
+//     }
+//     return 0;
+//   });
+// };
+
+// console.log(sortProductsByName(products))
 
 module.exports = {
   isEveryNumGreaterThan2,
