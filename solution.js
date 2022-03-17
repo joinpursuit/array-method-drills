@@ -73,6 +73,36 @@ console.log(sumAllNums(nums))
 console.log(concatAllWords(words))
 
 
+// Sort
+const sortNumAscending = () => {
+  return nums.sort((a, b) => a - b)
+}
+
+const sortNumDescending = () => {
+  return nums.sort((a, b) => b - a)
+}
+
+console.log(sortNumAscending(nums))
+console.log(sortNumDescending(nums))
+
+const sortWordsAscending = () => {
+  return words.map(word => word.toLowerCase()).sort();
+}
+
+const sortWordsDescending = () => {
+  return words.map(word => word.toLowerCase()).sort((a, b) => {
+    if (a > b) {
+      return -1;
+  }
+    if (b > a) {
+        return 1;
+    }
+    return 0;
+  })
+}
+
+console.log(sortWordsAscending(words))
+console.log(sortWordsDescending(words))
 
 module.exports = {
   isEveryNumGreaterThan2,
