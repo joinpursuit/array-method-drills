@@ -2,9 +2,10 @@ const { nums, words } = require("./data/data.js");
 
 // Every
 const isEveryNumGreaterThan2 = () => {
-  return nums.every((num)=> {
+  let greaterThanTwo = nums.every((num)=> {
     num >= 2;
   })
+  return greaterThanTwo;
 };
 
 const isEveryWordShorterThan7 = () => {
@@ -17,11 +18,17 @@ const isEveryWordShorterThan7 = () => {
 // Filter
 
 const arrayLessThan5 = () => {
-  //
+  let filteredNums = nums.filter((num)=>{
+    return num < 5;
+  })
+  return filteredNums;
 };
 
 const arrayOddLengthWords = () => {
-  //
+  let filteredWords = words.filter((word)=>{
+    return word.length % 2 === 1;
+  })
+  return filteredWords;
 };
 
 // Find
