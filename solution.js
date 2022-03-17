@@ -63,7 +63,7 @@ const logWordsWithExclamation = () => {
 
 // Map
 
-const arrayValuesTimes100TimesIndex = () => {
+const arrayValuesTimesSelfTimesIndex = () => {
   let answer = nums.map((num, index)=>{
     return (num * num) * index;
   })
@@ -106,7 +106,7 @@ module.exports = {
   firstWordLongerThan4Char,
   logValuesTimes3,
   logWordsWithExclamation,
-  arrayValuesTimes100TimesIndex,
+  arrayValuesTimesSelfTimesIndex,
   arrayWordsUpcased,
   areSomeNumsDivisibleBy7,
   doSomeWordsHaveAnA,
