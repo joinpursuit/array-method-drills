@@ -6,9 +6,9 @@ const isEveryNumGreaterThan2 = (nums) => {
   return nums.every(n => n >= 2)
 };
 
-const isEveryWordShorterThan7 = (words) => {
+const isEveryWordShorterThan7 = () => {
   // Use .filter() method to test if word length is shorter than 7
-  // return words.every(w => w.length < 8)
+  return words.every((w) => w.length < 7)
 };
 
 // Filter
@@ -45,7 +45,7 @@ const logWordsWithExclamation = (words) => {
 // Map
 
 const arrayValuesTimes100TimesIndex = (nums) => {
-  return nums.map((num,index) => num * 100 * index)
+  return nums.map((num,index) => num * num * index )
 };
 
 const arrayWordsUpcased = (words) => {
