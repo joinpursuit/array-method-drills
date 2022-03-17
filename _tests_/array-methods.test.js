@@ -68,7 +68,7 @@ describe("Array Methods", () => {
     expect(logWordsWithExclamation(words)).toBe(undefined);
   });
 
-  test("A new array of values that are multiplied by their index number and 100", () => {
+  test("A new array of values that are multiplied by itself and its index.", () => {
     expect(/\.map/.test(arrayValuesTimesSelfTimesIndex.toString())).toBe(true);
     expect(arrayValuesTimesSelfTimesIndex(nums)).toStrictEqual([
       0, 4, 18, 48, 100, 180, 294, 448, 648, 900, 0,
