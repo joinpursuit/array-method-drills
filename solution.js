@@ -47,7 +47,25 @@ const firstWordLongerThan4Char = () => {
   return firstLongerThanFourChar;
 };
 
+// Find Index Of
+const firstIndexDivisibleBy3 = () => {
+  let divisibleByThree = nums.find((num)=>{
+    return num % 3 === 0;
+  })
+  let divisibleBy3 = divisibleByThree;
+  return nums.indexOf(divisibleBy3);
+};
+
+const firstWordShorterThanOrEqualTo3Char = () => {
+  let firstWordShorterThanEqualToThree = words.find((word)=>{
+    return word.length <= 3;
+  })
+  let shorterThanEqualToThree = firstWordShorterThanEqualToThree;
+  return words.indexOf(shorterThanEqualToThree);
+}
+
 // For Each
+
 const logValuesTimes3 = () => {
   // for (let num of nums){
   //   console.log(num * 3)
@@ -104,6 +122,8 @@ module.exports = {
   arrayOddLengthWords,
   firstValDivisibleBy4,
   firstWordLongerThan4Char,
+  firstIndexDivisibleBy3,
+  firstWordShorterThanOrEqualTo3Char,
   logValuesTimes3,
   logWordsWithExclamation,
   arrayValuesTimesSelfTimesIndex,
