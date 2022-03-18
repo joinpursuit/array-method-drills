@@ -110,8 +110,26 @@ const sortWordsDesc = (words) => {
 };
 //isPanagram
 //function will take an array of string
+//no invalid input
 const isPanagram = (arr) => {
   return [...new Set(arr.join("").toLowerCase().split(""))].length === 26;
+};
+
+//Working with data
+//filter for products with a price that is less than 10, using the array below:
+const filterProductByPrice = (products) => {
+  return products.filter((product) => product.price < 10);
+};
+//sort alphabetically by product name
+const sortProductByName = (products) => {
+  products.sort((p1, p2) =>
+    p1.name.toLowerCase() < p2.name.toLowerCase()
+      ? -1
+      : p1.name.toLowerCase() > p2.name.toLowerCase()
+      ? 1
+      : 0
+  );
+  return products;
 };
 module.exports = {
   isEveryNumGreaterThan2,
