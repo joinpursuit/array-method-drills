@@ -61,6 +61,32 @@ const areSomeNumsDivisibleBy7 = (nums) => {
 const doSomeWordsHaveAnA = (words) => {
   return words.some((word) => word.includes("a"));
 };
+//Additional parts
+//nothing happens to the original array
+const getNumsSum = (nums) => {
+  return nums.reduce((a, b) => a + b, 0);
+};
+const concatWords = (words) => {
+  return words.reduce((a, b) => a + b, "");
+};
+//1. Try to sort without any arguments, do you get what you'd expect with the numbers array?
+//it will sort the array lexicographically
+
+//2. Try to sort without any arguments, do you get what you'd expect with the words array?
+//yes, array of strings are sorted in lexicographical order
+//3. Sort the numbers in ascending order
+const sortAscNums = (nums) => {
+  nums.sort((a, b) => a - b);
+  return nums;
+};
+
+//Sort the numbers in descending order
+const sortDescNums = (nums) => {
+  nums.sort((a, b) => b - a);
+  return nums;
+};
+//Sort the words in ascending order
+//Sort the words in descending order
 
 module.exports = {
   isEveryNumGreaterThan2,
