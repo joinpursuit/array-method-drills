@@ -1,62 +1,76 @@
-const { nums, words } = require("./data/data.js");
+// const { nums, words } = require("./data/data.js");
+
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0];
+
+const words = [
+  "The",
+  "quick",
+  "brown",
+  "fox",
+  "jumps",
+  "over",
+  "the",
+  "lazy",
+  "dog",
+];
 
 // Every
-const isEveryNumGreaterThan2 = () => {
-  //
+const isEveryNumGreaterThan2 = (numsArr = nums) => {
+  return numsArr.every((num) => num >= 2)
 };
 
-const isEveryWordShorterThan7 = () => {
-  //
+const isEveryWordShorterThan7 = (wordsArr = words) => {
+  return wordsArr.every((word) => word.length < 7)
 };
 
 // Filter
 
-const arrayLessThan5 = () => {
-  //
+const arrayLessThan5 = (numsArr = nums) => {
+  return numsArr.filter((num) => num < 5)
 };
 
-const arrayOddLengthWords = () => {
-  //
+const arrayOddLengthWords = (wordsArr = words) => {
+  return wordsArr.filter((word) => word.length % 2)
 };
 
 // Find
 
-const firstValDivisibleBy4 = () => {
-  //
+const firstValDivisibleBy4 = (numsArr = nums) => {
+  return numsArr.find((num) => num % 4 === 0)
 };
 
-const firstWordLongerThan4Char = () => {
-  //
+const firstWordLongerThan4Char = (wordsArr = words) => {
+  return wordsArr.find((word) => word.length > 4)
 };
 
 // For Each
 
-const logValuesTimes3 = () => {
-  //
+const logValuesTimes3 = (numsArr = nums) => {
+  return numsArr.forEach((num) => console.log(num*3) )
 };
 
-const logWordsWithExclamation = () => {
-  //
+const logWordsWithExclamation = (wordsArr = words) => {
+  return wordsArr.forEach((word) => console.log(word+"!"))
 };
 
 // Map
 
-const arrayValuesTimes100TimesIndex = () => {
-  //
+const arrayValuesTimes100TimesIndex = (numsArr = nums) => {
+  return numsArr.map((num, i) => i*100)
 };
 
-const arrayWordsUpcased = () => {
-  //
+const arrayWordsUpcased = (wordsArr = words) => {
+  return wordsArr.map((word) => word.toUpperCase())
 };
 
 // Some
 
-const areSomeNumsDivisibleBy7 = () => {
-  //
+const areSomeNumsDivisibleBy7 = (numsArr = nums) => {
+  return numsArr.some((num) => num % 7 === 0)
 };
 
-const doSomeWordsHaveAnA = () => {
-  //
+const doSomeWordsHaveAnA = (wordsArr = words) => {
+  return wordsArr.some((word) => word.toLowerCase().includes("a"))
 };
 
 module.exports = {
