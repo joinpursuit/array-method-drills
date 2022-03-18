@@ -1,4 +1,4 @@
-const { nums, words } = require("./data/data.js");
+const { nums, words, products } = require("./data/data.js");
 
 // Every
 const isEveryNumGreaterThan2 = () => {
@@ -114,6 +114,37 @@ const doSomeWordsHaveAnA = () => {
   })
   return doSomeWordsHaveA;
 };
+
+/* Array Methods Challenge Problems */
+
+// isPanagram (words):
+// Using the following array - test whether each letter a-z (case insensitive) is used at least once
+const isEachLetterUsedAtLeastOnce = () => {
+  let joinedWordsStr = words.join('')
+  let lowerCaseWords = joinedWordsStr.toLowerCase();
+  // console.log(lowerCaseWords) // "thequickbrownfoxjumpsoverthelazydog"
+  let lettersArr = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+  // looping through the string
+  for (let i = 0; i < lowerCaseWords.length; i++){
+    if (lettersArr.includes(lowerCaseWords[i])){
+      lettersArr.splice(lettersArr.indexOf(lowerCaseWords[i]), 1);
+    }
+  }
+  if (lettersArr.length === 0){
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(isEachLetterUsedAtLeastOnce(words))
+
+
+
+
+
+// Working with data (products):
+// filter for products with a price that is less than 10, using the array below:
+// sort alphabetically by product name
 
 module.exports = {
   isEveryNumGreaterThan2,

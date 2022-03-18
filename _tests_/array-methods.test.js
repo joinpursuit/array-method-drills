@@ -15,7 +15,7 @@ const {
   doSomeWordsHaveAnA,
 } = require("../solution.js");
 
-const { nums, words } = require("../data/data.js");
+const { nums, words, products } = require("../data/data.js");
 
 describe("Array Methods", () => {
   test("something something", () => {});
