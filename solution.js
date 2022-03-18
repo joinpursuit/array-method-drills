@@ -67,7 +67,7 @@ const getNumsSum = (nums) => {
   return nums.reduce((a, b) => a + b, 0);
 };
 const concatWords = (words) => {
-  return words.reduce((a, b) => a + b, "");
+  return words.reduce((a, b) => a + b + " ", "");
 };
 //1. Try to sort without any arguments, do you get what you'd expect with the numbers array?
 //it will sort the array lexicographically
@@ -86,8 +86,33 @@ const sortDescNums = (nums) => {
   return nums;
 };
 //Sort the words in ascending order
+const sortWordsAsc = (words) => {
+  words.sort((a, b) =>
+    a.toLowerCase() < b.toLowerCase()
+      ? -1
+      : a.toLowerCase() > b.toLowerCase()
+      ? 1
+      : 0
+  );
+  return words;
+};
 //Sort the words in descending order
-
+//Sort is destructive, the original array is modified.
+const sortWordsDesc = (words) => {
+  words.sort((a, b) =>
+    a.toLowerCase() < b.toLowerCase()
+      ? 1
+      : a.toLowerCase() > b.toLowerCase()
+      ? -1
+      : 0
+  );
+  return words;
+};
+//isPanagram
+//function will take an array of string
+const isPanagram = (arr) => {
+  return [...new Set(arr.join("").toLowerCase().split(""))].length === 26;
+};
 module.exports = {
   isEveryNumGreaterThan2,
   isEveryWordShorterThan7,
