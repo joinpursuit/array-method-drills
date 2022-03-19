@@ -7,24 +7,24 @@ const {
   firstWordLongerThan4Char,
   logValuesTimes3,
   logWordsWithExclamation,
-  arrayValuesTimes100TimesIndex,
+  arrayValuesSquaredTimesIndex,
   arrayWordsUpcased,
   areSomeNumsDivisibleBy7,
   doSomeWordsHaveAnA,
 } = require("../solution.js");
 
+// Don't match the test data from solution code
+// Students tend to skip passing in a parameter in their solutions
 const { nums, words } = require("../data/data.js");
 
 describe("Array Methods", () => {
-  test("something something", () => {});
-
   test("Every number is greater than or equal to 2", () => {
     expect(/\.every/.test(isEveryNumGreaterThan2.toString())).toBe(true);
     expect(isEveryNumGreaterThan2(nums)).toBe(false);
   });
 
   test("Every word is shorter than 7 characters", () => {
-    expect(/\.every/.test(isEveryWordShorterThan7().toString())).toBe(false);
+    expect(/\.every/.test(isEveryWordShorterThan7.toString())).toBe(true);
     expect(isEveryWordShorterThan7(words)).toBe(true);
   });
 
@@ -68,11 +68,10 @@ describe("Array Methods", () => {
     expect(logWordsWithExclamation(words)).toBe(undefined);
   });
 
-  test("A new array of values that are multiplied by their index number and 100", () => {
-    expect(/\.map/.test(arrayValuesTimes100TimesIndex.toString())).toBe(true);
-    expect(arrayValuesTimes100TimesIndex(nums)).toStrictEqual([
-      0, 100, 200, 300, 400, 500, 600, 700,800, 900, 1000
-      // 0, 4, 18, 48, 100, 180, 294, 448, 648, 900, 0,
+  test("A new array of values that are squared and then multiplied by their index number", () => {
+    expect(/\.map/.test(arrayValuesSquaredTimesIndex.toString())).toBe(true);
+    expect(arrayValuesSquaredTimesIndex(nums)).toStrictEqual([
+      0, 4, 18, 48, 100, 180, 294, 448, 648, 900, 0,
     ]);
   });
 
