@@ -50,8 +50,8 @@ const logWordsWithExclamation = () => {
 
 // Map
 
-const arrayValuesTimes100TimesIndex = () => {
-  return nums.map((num, index) => num * num * index)
+const arrayValuesSquaredTimesIndex = () => {
+    return nums.map((num, index) => num * num * index)
   //
 };
 
@@ -81,7 +81,7 @@ module.exports = {
   firstWordLongerThan4Char,
   logValuesTimes3,
   logWordsWithExclamation,
-  arrayValuesTimes100TimesIndex,
+  arrayValuesSquaredTimesIndex,
   arrayWordsUpcased,
   areSomeNumsDivisibleBy7,
   doSomeWordsHaveAnA,
