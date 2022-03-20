@@ -27,12 +27,14 @@ const arrayOddLengthWords = () => {
 
 // Find
 
+// 1. find the index of the first number that is divisible by 3
 const firstValDivisibleBy4 = () => {
-//
+    return nums.find((num) => num % 4 === 0)
 };
 
+// 1. console.log each word with an exclamation point at the end of it
 const firstWordLongerThan4Char = () => {
-//
+    return words.find((word) => word.length > 4)
 };
 
 // For Each
