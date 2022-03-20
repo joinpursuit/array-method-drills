@@ -34,17 +34,20 @@ const firstValDivisibleBy4 = () => {
 
 // 1. console.log each word with an exclamation point at the end of it
 const firstWordLongerThan4Char = () => {
-    return words.find((word) => word.length > 4)
+    return(words.find((word) => word.length > 4))
 };
 
 // For Each
 
+// 1. console.log each value of the nums array multiplied by 3
 const logValuesTimes3 = () => {
-//
+    return nums.forEach((num) => num * 3)
+
 };
 
+// 1. console.log each word with an exclamation point at the end of it
 const logWordsWithExclamation = () => {
-//
+    console.log(words.forEach((word) => word + '!'))
 };
 
 // Map
