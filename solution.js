@@ -52,12 +52,15 @@ const logWordsWithExclamation = () => {
 
 // Map
 
+// A new array of values that are squared, 
+// then multiplied by their index number
 const arrayValuesSquaredTimesIndex = () => {
-//
+  return nums.map((num, index) =>  num * num * index)
 };
 
+// 1.  make a new array of all the words in all uppercase
 const arrayWordsUpcased = () => {
-//
+    return words.map((word) => word.toUpperCase())
 };
 
 // Some
