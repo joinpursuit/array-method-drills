@@ -16,12 +16,12 @@ const isEveryWordShorterThan7 = () => {
 
 // 1. filter the array for numbers less than 5
 const arrayLessThan5 = () => {
-    return nums.filter((num) => num < 5)
+  return nums.filter((num) => num < 5)
 };
 
 // 1. filter words that have an odd length
 const arrayOddLengthWords = () => {
-    return words.filter((word) => word.length % 2 === 1)
+  return words.filter((word) => word.length % 2 === 1)
 
 };
 
