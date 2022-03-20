@@ -65,12 +65,14 @@ const arrayWordsUpcased = () => {
 
 // Some
 
+// - Find out if some numbers are divisible by 7
 const areSomeNumsDivisibleBy7 = () => {
-//
+    return nums.some((num) => num / 7)
 };
 
+// - Find out if some words have the letter `a` in them
 const doSomeWordsHaveAnA = () => {
-//
+    return words.some((word) => word.includes('a'))
 };
 
 module.exports = {
