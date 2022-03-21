@@ -136,15 +136,35 @@ const isEachLetterUsedAtLeastOnce = () => {
     return false;
   }
 }
-console.log(isEachLetterUsedAtLeastOnce(words))
-
-
-
+// console.log(isEachLetterUsedAtLeastOnce(words))
 
 
 // Working with data (products):
 // filter for products with a price that is less than 10, using the array below:
+const findProductsWithPriceLessThanTen = () => {
+  let productsLessThanTen = products.filter((product)=>{
+    if (product.price < 10){
+      return product;
+    }
+  })
+  return productsLessThanTen;
+}
+// console.log(findProductsWithPriceLessThanTen(products))
+
 // sort alphabetically by product name
+const sortProductsAlphabeticallyByName = () => {
+  let sortAlphabeticallyByName = products.sort((a,b)=>{
+    if (a.name < b.name){
+      return -1;
+    }
+    if (a.name > b.name){
+      return 1;
+    }
+    return 0;
+  })
+  return sortAlphabeticallyByName;
+}
+// console.log(sortProductsAlphabeticallyByName(products))
 
 module.exports = {
   isEveryNumGreaterThan2,
