@@ -50,8 +50,10 @@ const logWordsWithExclamation = () => {
 };
 
 // Map
-// "A new array of values that are squared and then multiplied by their index number".
-const arrayValuesTimes100TimesIndex = () => {
+
+
+const arrayValuesSquaredTimesIndex = () => {
+
   //
   return nums.map((num,i) => (num *num) *i )
 };
@@ -82,7 +84,7 @@ module.exports = {
   firstWordLongerThan4Char,
   logValuesTimes3,
   logWordsWithExclamation,
-  arrayValuesTimes100TimesIndex,
+  arrayValuesSquaredTimesIndex,
   arrayWordsUpcased,
   areSomeNumsDivisibleBy7,
   doSomeWordsHaveAnA,
