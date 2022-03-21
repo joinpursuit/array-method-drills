@@ -50,10 +50,10 @@ const logWordsWithExclamation = () => {
 };
 
 // Map
-
+// "A new array of values that are squared and then multiplied by their index number".
 const arrayValuesTimes100TimesIndex = () => {
   //
-  return nums.map((num,i) => num * (i*100))
+  return nums.map((num,i) => (num *num) *i )
 };
 
 const arrayWordsUpcased = () => {
