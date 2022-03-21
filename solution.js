@@ -37,7 +37,7 @@ const logValuesTimes3 = () => {
 };
 
 const logWordsWithExclamation = () => {
-  return words.forEach(word=> console.log(word.includes("!")))
+  return words.forEach((word)=> console.log(`${word}!`))
 };
 
 // Map
