@@ -45,22 +45,21 @@ const logWordsWithExclamation = () => {
 };
 
 // Map
-
 const arrayValuesSquaredTimesIndex = () => {
-  //
+  return nums.map((num, i) => num ** 2 * i);
 };
 
 const arrayWordsUpcased = () => {
-  //
+  return words.map((word) => word.toUpperCase());
 };
 
 // Some
 const areSomeNumsDivisibleBy7 = () => {
-  //
+  return nums.some((num) => num % 7 === 0);
 };
 
 const doSomeWordsHaveAnA = () => {
-  //
+  return words.some((word) => word.includes('a'));
 };
 
 module.exports = {
