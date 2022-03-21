@@ -1,22 +1,20 @@
 const { nums, words } = require("./data/data.js");
 
-console.log(words);
 // Every
-const isEveryNumGreaterThan2 = (number) => {
-  let greater = number.find((n) => n >= 2);
+const isEveryNumGreaterThan2 = (nums) => {
+  let greater = nums.every((n) => n >= 2);
   return greater;
 };
 //
 
-isEveryNumGreaterThan2(nums);
+// isEveryNumGreaterThan2(nums);
 
-const isEveryWordShorterThan7 = (array) => {
-  let filtered = array.filter((a) => a.length > 7);
-  console.log(array);
+const isEveryWordShorterThan7 = () => {
+  let filtered = words.every((word) => word.length < 7);
   return filtered;
 };
 
-isEveryWordShorterThan7(words);
+// isEveryWordShorterThan7(words);
 
 // isEveryWordShorterThan7(words);
 //
@@ -69,11 +67,7 @@ const logWordsWithExclamation = (words) => {
 
 const arrayValuesTimes100TimesIndex = (values) => {
   //
-  console.log(
-    values.map((value) => {
-      value * 3;
-    })
-  );
+  return values.map((val, index) => val * val * index);
 };
 
 console.log(arrayValuesTimes100TimesIndex(nums));
