@@ -44,7 +44,6 @@ const logWordsWithExclamation = (words) => {
 
 // Map
 
-
 const arrayValuesSquaredTimesIndex = () => {
   return nums.map((eachElement, index) => eachElement * index * eachElement);
   //
@@ -219,8 +218,6 @@ const sortByProductName = (products) => {
     }
   });
 };
-
-console.log(sortByProductName(products));
 
 module.exports = {
   isEveryNumGreaterThan2,
