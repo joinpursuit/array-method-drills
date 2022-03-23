@@ -1,62 +1,62 @@
 const { nums, words } = require("./data/data.js");
 
 // Every
-const isEveryNumGreaterThan2 = () => {
-  //
+const isEveryNumGreaterThan2 = (numberArray) => {
+  return numberArray.every((el) => el>=2);
 };
 
-const isEveryWordShorterThan7 = () => {
-  //
+const isEveryWordShorterThan7 = (wordArray) => {
+  return wordArray.every((el) => el.length < 7);
 };
 
 // Filter
 
-const arrayLessThan5 = () => {
-  //
+const arrayLessThan5 = (numberArray) => {
+  return numberArray.filter((el) => el<5);
 };
 
-const arrayOddLengthWords = () => {
-  //
+const arrayOddLengthWords = (wordArray) => {
+  return wordArray.filter((el) => el.length % 2 !== 0 );
 };
 
 // Find
 
-const firstValDivisibleBy4 = () => {
-  //
+const firstValDivisibleBy4 = (numberArray) => {
+  return numberArray.find((el) => el % 4 === 0);
 };
 
-const firstWordLongerThan4Char = () => {
-  //
+const firstWordLongerThan4Char = (wordArray) => {
+  return wordArray.find((el) => el.length>4);
 };
 
 // For Each
 
-const logValuesTimes3 = () => {
-  //
+const logValuesTimes3 = (numberArray) => {
+  return numberArray.forEach((el)=> el*3);
 };
 
-const logWordsWithExclamation = () => {
-  //
+const logWordsWithExclamation = (wordArray) => {
+  return wordArray.forEach((el) => el.includes('!'));
 };
 
 // Map
 
-const arrayValuesSquaredTimesIndex = () => {
-  //
+const arrayValuesSquaredTimesIndex = (numberArray) => {
+  return numberArray.map((el, index) => Math.pow(el,2)*index)
 };
 
-const arrayWordsUpcased = () => {
-  //
+const arrayWordsUpcased = (wordArray) => {
+  return wordArray.map((el) => el.toUpperCase())
 };
 
 // Some
 
-const areSomeNumsDivisibleBy7 = () => {
-  //
+const areSomeNumsDivisibleBy7 = (numberArray) => {
+  return numberArray.some((el) => el % 7 === 0);
 };
 
-const doSomeWordsHaveAnA = () => {
-  //
+const doSomeWordsHaveAnA = (wordArray) => {
+  return wordArray.some((el) => el.toLowerCase().includes('a'));
 };
 
 module.exports = {
