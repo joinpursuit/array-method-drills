@@ -41,7 +41,7 @@ const logWordsWithExclamation = () => {
 
 // Map
 
-const arrayValuesTimes100TimesIndex = () => {
+const arrayValuesSquaredTimesIndex = () => {
   //
 };
 
