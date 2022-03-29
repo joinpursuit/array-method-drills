@@ -7,7 +7,7 @@ const {
   firstWordLongerThan4Char,
   logValuesTimes3,
   logWordsWithExclamation,
-  arrayValuesTimes100TimesIndex,
+  arrayValuesSquaredTimesIndex,
   arrayWordsUpcased,
   areSomeNumsDivisibleBy7,
   doSomeWordsHaveAnA,
@@ -57,20 +57,20 @@ describe("Array Methods", () => {
   });
 
   test("Console log the values times 3", () => {
-    expect(/\.forEach/.test(logValuesTimes3.toString(nums))).toBe(true);
+    expect(/\.forEach/.test(logValuesTimes3.toString())).toBe(true);
     expect(logValuesTimes3(nums)).toBe(undefined);
   });
 
   test("Console log each word with an exclamation point", () => {
-    expect(/\.forEach/.test(logWordsWithExclamation.toString(words))).toBe(
+    expect(/\.forEach/.test(logWordsWithExclamation.toString())).toBe(
       true
     );
     expect(logWordsWithExclamation(words)).toBe(undefined);
   });
 
   test("A new array of values that are multiplied by their index number and 100", () => {
-    expect(/\.map/.test(arrayValuesTimes100TimesIndex.toString())).toBe(true);
-    expect(arrayValuesTimes100TimesIndex(nums)).toStrictEqual([
+    expect(/\.map/.test(arrayValuesSquaredTimesIndex.toString())).toBe(true);
+    expect(arrayValuesSquaredTimesIndex(nums)).toStrictEqual([
       0, 4, 18, 48, 100, 180, 294, 448, 648, 900, 0,
     ]);
   });
