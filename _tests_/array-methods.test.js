@@ -24,7 +24,7 @@ describe("Array Methods", () => {
   });
 
   test("Every word is shorter than 7 characters", () => {
-    expect(/\.every/.test(isEveryWordShorterThan7().toString())).toBe(false);
+    expect(/\.every/.test(isEveryWordShorterThan7.toString())).toBe(true);
     expect(isEveryWordShorterThan7(words)).toBe(true);
   });
 
