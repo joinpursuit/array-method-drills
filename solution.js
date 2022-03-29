@@ -62,18 +62,31 @@ const firstValDivisibleBy4 = (nums) => {
   //
 };
 
-const firstWordLongerThan4Char = () => {
-  //
+const firstWordLongerThan4Char = (words) => {
+  let results = words.find((word) => {
+    if(word.length > 4){
+      return true;
+    } else{
+      return false;
+    }
+  });
+  return results;
 };
 
 // For Each
 
-const logValuesTimes3 = () => {
-  //
+const logValuesTimes3 = (nums) => {
+  let results = nums.forEach((num)=>{
+    return num * 3;
+  });
+  return results;
 };
 
-const logWordsWithExclamation = () => {
-  //
+const logWordsWithExclamation = (words) => {
+  let newWord = words.forEach((word)=>{
+    return `${word}!`;
+  });
+  return newWord;
 };
 
 // Map
