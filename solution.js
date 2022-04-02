@@ -91,21 +91,31 @@ const logWordsWithExclamation = (words) => {
 
 // Map
 
-const arrayValuesTimes100TimesIndex = () => {
-  //
+const arrayValuesTimes100TimesIndex = (nums) => {
+  let arr100Times = nums.map((num, i)=>{
+    return (num^2) * i;
+  });
+  return arr100Times;
 };
 
-const arrayWordsUpcased = () => {
-  //
+const arrayWordsUpcased = (words) => {
+  let upperCasedArr = words.map((word)=>{
+    return word.toString();
+  });
+  return upperCasedArr.toUppercase();
 };
 
 // Some
 
-const areSomeNumsDivisibleBy7 = () => {
+const areSomeNumsDivisibleBy7 = (nums) => {
+  let isDivisible = (num)=>{
+    num % 7 === 0;
+  }
+  return nums.some(isDivisible);
   //
 };
 
-const doSomeWordsHaveAnA = () => {
+const doSomeWordsHaveAnA = (words) => {
   //
 };
 
