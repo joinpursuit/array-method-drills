@@ -7,7 +7,7 @@ const {
   firstWordLongerThan4Char,
   logValuesTimes3,
   logWordsWithExclamation,
-  arrayValuesTimes100TimesIndex,
+  arrayValuesSquaredTimesIndex,
   arrayWordsUpcased,
   areSomeNumsDivisibleBy7,
   doSomeWordsHaveAnA,
@@ -69,8 +69,8 @@ describe("Array Methods", () => {
   });
 
   test("A new array of values that are squared and then multiplied by their index number", () => {
-    expect(/\.map/.test(arrayValuesTimes100TimesIndex.toString())).toBe(true);
-    expect(arrayValuesTimes100TimesIndex(nums)).toStrictEqual([
+    expect(/\.map/.test(arrayValuesSquaredTimesIndex.toString())).toBe(true);
+    expect(arrayValuesSquaredTimesIndex(nums)).toStrictEqual([
       0, 4, 18, 48, 100, 180, 294, 448, 648, 900, 0,
     ]);
   });

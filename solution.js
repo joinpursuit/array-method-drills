@@ -91,31 +91,33 @@ const logWordsWithExclamation = (words) => {
 
 // Map
 
-const arrayValuesTimes100TimesIndex = (nums) => {
-  let arr100Times = nums.map((num, i)=>{
-    return (num^2) * i;
-  });
-  return arr100Times;
+const arrayValuesSquaredTimesIndex = (nums) => {
+  let squaredArr = nums.map((num, i)=>{
+    return (num * num) * i;
+  })
+  return squaredArr;
 };
 
 const arrayWordsUpcased = (words) => {
   let upperCasedArr = words.map((word)=>{
-    return word.toString();
+    return word.toUpperCase();
   });
-  return upperCasedArr.toUppercase();
+  return upperCasedArr;
 };
 
 // Some
 
 const areSomeNumsDivisibleBy7 = (nums) => {
-  let isDivisible = (num)=>{
-    num % 7 === 0;
-  }
-  return nums.some(isDivisible);
-  //
+  return nums.some((num)=>{
+    if(num % 7 === 0){
+      return true;
+    } else{
+      false;
+    }
+  });
 };
 
-const doSomeWordsHaveAnA = (words) => {
+const doSomeWordsHaveAnA = () => {
   //
 };
 
@@ -128,7 +130,7 @@ module.exports = {
   firstWordLongerThan4Char,
   logValuesTimes3,
   logWordsWithExclamation,
-  arrayValuesTimes100TimesIndex,
+  arrayValuesSquaredTimesIndex,
   arrayWordsUpcased,
   areSomeNumsDivisibleBy7,
   doSomeWordsHaveAnA,
