@@ -117,8 +117,14 @@ const areSomeNumsDivisibleBy7 = (nums) => {
   });
 };
 
-const doSomeWordsHaveAnA = () => {
-  //
+const doSomeWordsHaveAnA = (words) => {
+  return words.some((word)=>{
+    if(word.includes("a")){
+      return true;
+    } else {
+      return false;
+    };
+  });
 };
 
 module.exports = {
