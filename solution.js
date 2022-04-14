@@ -6,13 +6,13 @@ const isEveryNumGreaterThan2 = () => {
 };
 
 const isEveryWordShorterThan7 = () => {
-  //
+  return words.every((word) => word.length < 7)
 };
 
 // Filter
 
 const arrayLessThan5 = () => {
-  //
+  return nums.filter((arrEl) => arrEl < 5)
 };
 
 const arrayOddLengthWords = () => {
