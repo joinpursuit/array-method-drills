@@ -26,37 +26,39 @@ const firstValDivisibleBy4 = () => {
 };
 
 const firstWordLongerThan4Char = () => {
-  //
+  return words.find((word) => word.length > 4)
 };
 
 // For Each
 
+//remember this is a log not a return 
 const logValuesTimes3 = () => {
-  //
+  console.log(words.forEach((number) => number * 3))
 };
 
 const logWordsWithExclamation = () => {
-  //
+  console.log(words.forEach((word) => word + "!"))
 };
 
 // Map
+//Back to return
 
 const arrayValuesTimes100TimesIndex = () => {
-  //
+  return nums.map((number, i) => number * number * i)
 };
 
 const arrayWordsUpcased = () => {
-  //
+  return words.map((word) => word.toUpperCase())
 };
 
 // Some
 
 const areSomeNumsDivisibleBy7 = () => {
-  //
+  return nums.some((number) => number / 7)
 };
 
 const doSomeWordsHaveAnA = () => {
-  //
+  return words.some((word) => word.includes("a"))
 };
 
 module.exports = {
