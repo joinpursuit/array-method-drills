@@ -16,13 +16,13 @@ const arrayLessThan5 = () => {
 };
 
 const arrayOddLengthWords = () => {
-  //
+  return words.filter((word) => word.length % 2 === 1) //modulo remainder 1 for odd - or !== 0 (does not equal 0)
 };
-
 // Find
 
 const firstValDivisibleBy4 = () => {
   //
+  return nums.find((number) => number % 4 === 0)
 };
 
 const firstWordLongerThan4Char = () => {
