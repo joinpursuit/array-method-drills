@@ -1,36 +1,35 @@
 const { nums, words } = require('./data/data.js');
 
+//Sorting in descending order:
 const descendingSort = (nums) => {
   return nums.sort((a, b) => b - a);
 };
-console.log(
-  'Descending from largest num to smallest num:',
-  descendingSort(nums)
-);
+console.log('Descending from largest to smallest:', descendingSort(nums));
 
+//Sorting in ascending order:
 const ascendingSort = (nums) => {
   return nums.sort((a, b) => a - b);
 };
-console.log('Ascending from smallest num to largest num', ascendingSort(nums));
+console.log('Ascending from smallest to largest', ascendingSort(nums));
 
+//Sorting in descending order:
 const descendingWords = (words) => {
-  return words.sort((a, b) =>
-    a.toLowerCase() === b.toLowerCase() ? 0 : a > b ? 1 : -1
-  );
+  return words.map((word) => word.toLowerCase()).sort((a, b) => b - a);
 };
-console.log('Sorting order:', descendingWords(words));
+console.log(
+  'Sorting by reverse alphabetical order (Z-A):',
+  descendingWords(words)
+);
 
-// const ascendingWords = (words) => {
-//   return words.sort((a, b) => (a.toLowerCase() < b.toLowerCase() ? 1 : -1));
-// };
-// console.log(
-//   'Ascending from shortest word to longest word:',
-//   ascendingWords(words)
-// );
+//Sorting in ascending order:
+const ascendingWords = (words) => {
+  return words.map((word) => word.toLowerCase()).sort();
+};
+console.log('Sorting by alphabetical order (A-Z):', ascendingWords(words));
 
 module.exports = {
   descendingSort,
   ascendingSort,
   descendingWords,
-  //ascendingSort,
+  ascendingSort,
 };
