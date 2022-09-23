@@ -6,10 +6,16 @@ const isEveryNumGreaterThan2 = (nums) => {
   (num) => { return num >= 2
  })
  return numbersAbove2
-  //
 };
 
 const isEveryWordShorterThan7 = () => {
+  const shorterThan7Char = words.every(
+    (word) => {
+      if (word.length - 7) {
+        return word
+      }
+   })
+   return shorterThan7Char
   //
 };
 
