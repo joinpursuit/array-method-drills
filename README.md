@@ -78,8 +78,8 @@ You don't have to write an answer to the thought questions.
 
 #### Map
 
-1.  make a new array of each number multiplied by 100
-1.  make a new array of all the words in all uppercase
+1. Make a new array of each number squared and then multiplied by their index number
+1. Make a new array of all the words in all uppercase
 
 **Thought Questions**
 
