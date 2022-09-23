@@ -22,6 +22,8 @@ const isEveryWordShorterThan7 = () => {
 // Filter
 
 const arrayLessThan5 = () => {
+  const result = nums.filter(num => num < 5);
+return result
   //
 };
 
