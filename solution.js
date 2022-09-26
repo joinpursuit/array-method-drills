@@ -40,47 +40,53 @@ const firstValDivisibleBy4 = () => {
 };
 
 const firstWordLongerThan4Char = () => {
-  //
+  const firstWord = words.find(words => words.length > 4)
+
+  return firstWord
 };
 
 // Find Index
 
 const firstNumIndexDivisibleBy3 = () => {
-  //
+  return nums.findIndex((element) => element % 3 === 0);
 };
 
 const firstWordIndexLessThan2Char = () => {
-  //
+  return words.findIndex((element) => element.length < 2);
 };
 
 // For Each
 
-const logValuesTimes3 = () => {
-  //
+const logValuesTimes3 = (nums) => {
+  nums.forEach((element) => {
+    console.log(element * 3);
+  });
 };
 
 const logWordsWithExclamation = () => {
-  //
+  words.forEach((element) => {
+    console.log(`${element}!`);
+  });
 };
 
 // Map
 
 const arrayValuesSquaredTimesIndex = () => {
-  //
+  return nums.map((element, index) => Math.pow(element, 2) * index);
 };
 
 const arrayWordsUpcased = () => {
-  //
+  return words.map((e) => e.toUpperCase());
 };
 
 // Some
 
 const areSomeNumsDivisibleBy7 = () => {
-  //
+  return nums.some((element) => element % 7 === 0);
 };
 
 const doSomeWordsHaveAnA = () => {
-  //
+  return words.some((element) => element.includes("a"));
 };
 
 module.exports = {
