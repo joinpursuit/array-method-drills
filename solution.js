@@ -6,12 +6,12 @@ const isEveryNumGreaterThan2 = (nums) => {
 };
 
 const isEveryWordShorterThan7 = (words) => {
-  return words.every(w => w.length < 7)
+  return words.every(w => w.length < 7);
 };
 
 // Filter
-const arrayLessThan5 = () => {
-  //
+const arrayLessThan5 = (nums) => {
+  return nums.filter(n => n < 5);  
 };
 
 const arrayOddLengthWords = () => {
