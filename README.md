@@ -30,15 +30,15 @@ Two arrays to work with
 const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0];
 
 const panagram = [
-  "The",
-  "quick",
-  "brown",
-  "fox",
-  "jumps",
-  "over",
-  "the",
-  "lazy",
-  "dog",
+  'The',
+  'quick',
+  'brown',
+  'fox',
+  'jumps',
+  'over',
+  'the',
+  'lazy',
+  'dog',
 ];
 ```
 
@@ -123,15 +123,15 @@ Using the following array - test whether each letter a-z (case insensitive) is u
 
 ```js
 const panagram = [
-  "The",
-  "quick",
-  "brown",
-  "fox",
-  "jumps",
-  "over",
-  "the",
-  "lazy",
-  "dog",
+  'The',
+  'quick',
+  'brown',
+  'fox',
+  'jumps',
+  'over',
+  'the',
+  'lazy',
+  'dog',
 ];
 ```
 
@@ -143,54 +143,54 @@ const panagram = [
 ```js
 const products = [
   {
-    name: "fairy lights",
+    name: 'fairy lights',
     price: 5.99,
-    description: "festive holiday decoration",
+    description: 'festive holiday decoration',
   },
   {
-    name: "banana",
+    name: 'banana',
     price: 0.99,
-    description: "full of potassium",
+    description: 'full of potassium',
   },
   {
-    name: "egg separator",
+    name: 'egg separator',
     price: 3.99,
-    description: "it separates yolks from whites",
+    description: 'it separates yolks from whites',
   },
   {
-    name: "flag",
+    name: 'flag',
     price: 5.99,
-    description: "catches the breeze",
+    description: 'catches the breeze',
   },
   {
-    name: "quark",
+    name: 'quark',
     price: 0.01,
-    description: "Very small",
+    description: 'Very small',
   },
   {
-    name: "turtleneck",
+    name: 'turtleneck',
     price: 19.99,
-    description: "available in black and slightly-darker black",
+    description: 'available in black and slightly-darker black',
   },
   {
-    name: "mitt (leather)",
+    name: 'mitt (leather)',
     price: 15,
-    description: "regulation sized",
+    description: 'regulation sized',
   },
   {
-    name: "nothing",
+    name: 'nothing',
     price: 10,
     description: "Hey, if you pay us, we won't ask any questions.",
   },
   {
-    name: "violin",
+    name: 'violin',
     price: 2000,
-    description: "Talk about a JS fiddle...",
+    description: 'Talk about a JS fiddle...',
   },
   {
-    name: "yoyo",
+    name: 'yoyo',
     price: 1,
-    description: "We had to pull some strings to get this one in.",
+    description: 'We had to pull some strings to get this one in.',
   },
 ];
 ```
