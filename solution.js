@@ -38,15 +38,18 @@ const firstValDivisibleBy4 = (nums) => {
   return nums.find(n => n % 4 === 0);
 };
 
-const firstWordLongerThan4Char = () => {
-  //
+const firstWordLongerThan4Char = (words) => {
+  return words.find(w => w.length > 4);
 };
 
 /***************************************************
  * Find Index
+ * The findIndex() method returns the index of the first element in an array 
+ * that satisfies the provided testing function. If no elements satisfy the testing 
+ * function, -1 is returned.
  ***************************************************/
-const firstNumIndexDivisibleBy3 = () => {
-  //
+const firstNumIndexDivisibleBy3 = (nums) => {
+  return nums.findIndex(n => n % 3 === 0);
 };
 
 const firstWordIndexLessThan2Char = () => {
