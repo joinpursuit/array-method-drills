@@ -52,8 +52,8 @@ const firstNumIndexDivisibleBy3 = (nums) => {
   return nums.findIndex(n => n % 3 === 0);
 };
 
-const firstWordIndexLessThan2Char = () => {
-  //
+const firstWordIndexLessThan2Char = (words) => {
+  return words.findIndex(w => w.length < 2);
 };
 
 /***************************************************
