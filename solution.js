@@ -1,16 +1,15 @@
 const { nums, words } = require("./data/data.js");
 
 // Every
-const isEveryNumGreaterThan2 = () => {
-  //
+const isEveryNumGreaterThan2 = (nums) => {
+  return nums.every(n => n >= 2);
 };
 
-const isEveryWordShorterThan7 = () => {
-  //
+const isEveryWordShorterThan7 = (words) => {
+  return words.every(w => w.length < 7)
 };
 
 // Filter
-
 const arrayLessThan5 = () => {
   //
 };
