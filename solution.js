@@ -14,8 +14,8 @@ const arrayLessThan5 = (nums) => {
   return nums.filter(n => n < 5);  
 };
 
-const arrayOddLengthWords = () => {
-  //
+const arrayOddLengthWords = (words) => {
+  return words.filter(w => (w.length % 2 === 0))
 };
 
 // Find
