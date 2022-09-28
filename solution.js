@@ -64,11 +64,11 @@ const firstWordIndexLessThan2Char = (words) => {
  * while using promises (or async functions) as forEach callback.
  ***************************************************/
 const logValuesTimes3 = (nums) => {
-  return nums.forEach(n => n * 3);
+  console.log(nums.forEach(n => n * 3));
 };
 
 const logWordsWithExclamation = (words) => {
-  return words.forEach(w => `${w}!`)
+  console.log(words.forEach(w => `${w}!`));
 };
 
 /***************************************************
