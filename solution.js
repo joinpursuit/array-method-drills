@@ -85,8 +85,8 @@ const arrayWordsUpcased = (words) => {
 /***************************************************
  * Some
  ***************************************************/
-const areSomeNumsDivisibleBy7 = () => {
-  //
+const areSomeNumsDivisibleBy7 = (nums) => {
+  return nums.some(n => (n % 7 === 0));
 };
 
 const doSomeWordsHaveAnA = () => {
