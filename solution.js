@@ -64,11 +64,11 @@ const firstWordIndexLessThan2Char = (words) => {
  * while using promises (or async functions) as forEach callback.
  ***************************************************/
 const logValuesTimes3 = (nums) => {
-  console.log(nums.forEach(n => n * 3));
+  return nums.forEach(n => n * 3);
 };
 
 const logWordsWithExclamation = (words) => {
-  console.log(words.forEach(w => `${w}!`));
+  return words.forEach(w => `${w}!`);
 };
 
 /***************************************************
@@ -89,8 +89,8 @@ const areSomeNumsDivisibleBy7 = (nums) => {
   return nums.some(n => (n % 7 === 0));
 };
 
-const doSomeWordsHaveAnA = () => {
-  //
+const doSomeWordsHaveAnA = (words) => {
+  return words.some(w => w.includes('a'));
 };
 
 module.exports = {
