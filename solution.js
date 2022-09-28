@@ -108,6 +108,7 @@ const concatenateAllWords = (words) => {
 
 console.log(concatenateAllWords(words));
 
+
 module.exports = {
   isEveryNumGreaterThan2,
   isEveryWordShorterThan7,
