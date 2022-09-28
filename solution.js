@@ -78,8 +78,8 @@ const arrayValuesSquaredTimesIndex = (nums) => {
   return nums.map((n,i) => (Math.pow(n,2)*i));
 };
 
-const arrayWordsUpcased = () => {
-  //
+const arrayWordsUpcased = (words) => {
+  return words.map(w => w.toUpperCase());
 };
 
 /***************************************************
