@@ -93,6 +93,21 @@ const doSomeWordsHaveAnA = (words) => {
   return words.some(w => w.includes('a'));
 };
 
+/***************************************************
+ * Reduce
+ ***************************************************/
+ const addAllNumbers = (nums) => {
+  return nums.reduce((a,b) => a+b, 0);
+};
+
+console.log(addAllNumbers(nums));
+
+const concatenateAllWords = (words) => {
+  return words.reduce((a,b) => `${a} ${b}`);
+};
+
+console.log(concatenateAllWords(words));
+
 module.exports = {
   isEveryNumGreaterThan2,
   isEveryWordShorterThan7,
