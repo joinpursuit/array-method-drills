@@ -53,23 +53,23 @@ You don't have to write an answer to the thought questions.
 
 #### Filter
 
-1. filter the array for numbers less than 5
-1. filter words that have an odd length
+1. filter the array for numbers less than 5 [ok]
+1. filter words that have an odd length [ok]
 
 #### Find
 
-1. Find the first value divisible by 4
-1. find the first word that is longer than 4 characters
+1. Find the first value divisible by 4 [ok]
+1. find the first word that is longer than 4 characters [ok]
 
 #### Find Index
 
-1. find the index of the first number that is divisible by 3
-1. find the index of the first word that is less than 2 characters long
+1. find the index of the first number that is divisible by 3 [ok]
+1. find the index of the first word that is less than 2 characters long [ok]
 
 #### For Each
 
-1. console.log each value of the nums array multiplied by 3
-1. console.log each word with an exclamation point at the end of it
+1. console.log each value of the nums array multiplied by 3 [ok]
+1. console.log each word with an exclamation point at the end of it [ok]
 
 **Thought Questions**
 

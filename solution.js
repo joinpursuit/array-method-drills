@@ -58,20 +58,24 @@ const firstWordIndexLessThan2Char = (words) => {
 
 /***************************************************
  * For Each
+ * The forEach() method executes a provided function once for each array element.
+ * forEach expects a synchronous function.
+ * forEach does not wait for promises. Make sure you are aware of the implications 
+ * while using promises (or async functions) as forEach callback.
  ***************************************************/
-const logValuesTimes3 = () => {
-  //
+const logValuesTimes3 = (nums) => {
+  return nums.forEach(n => n * 3);
 };
 
-const logWordsWithExclamation = () => {
-  //
+const logWordsWithExclamation = (words) => {
+  return words.forEach(w => `${w}!`)
 };
 
 /***************************************************
  * Map
  ***************************************************/
-const arrayValuesSquaredTimesIndex = () => {
-  //
+const arrayValuesSquaredTimesIndex = (nums) => {
+  return nums.map((n,i) => (Math.pow(n,2)*i));
 };
 
 const arrayWordsUpcased = () => {
