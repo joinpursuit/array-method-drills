@@ -30,15 +30,15 @@ Two arrays to work with
 const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0];
 
 const panagram = [
-  "The",
-  "quick",
-  "brown",
-  "fox",
-  "jumps",
-  "over",
-  "the",
-  "lazy",
-  "dog",
+	'The',
+	'quick',
+	'brown',
+	'fox',
+	'jumps',
+	'over',
+	'the',
+	'lazy',
+	'dog',
 ];
 ```
 
@@ -48,28 +48,28 @@ You don't have to write an answer to the thought questions.
 
 #### Every
 
-1. Determine if every number is greater than or equal to 2
-1. determine if every word shorter than 7 characters
+1. Determine if every number is greater than or equal to 2 [ok]
+1. determine if every word shorter than 7 characters [ok]
 
 #### Filter
 
-1. filter the array for numbers less than 5
-1. filter words that have an odd length
+1. filter the array for numbers less than 5 [ok]
+1. filter words that have an odd length [ok]
 
 #### Find
 
-1. Find the first value divisible by 4
-1. find the first word that is longer than 4 characters
+1. Find the first value divisible by 4 [ok]
+1. find the first word that is longer than 4 characters [ok]
 
 #### Find Index
 
-1. find the index of the first number that is divisible by 3
-1. find the index of the first word that is less than 2 characters long
+1. find the index of the first number that is divisible by 3 [ok]
+1. find the index of the first word that is less than 2 characters long [ok]
 
 #### For Each
 
-1. console.log each value of the nums array multiplied by 3
-1. console.log each word with an exclamation point at the end of it
+1. console.log each value of the nums array multiplied by 3 [ok]
+1. console.log each word with an exclamation point at the end of it [ok]
 
 **Thought Questions**
 
@@ -123,15 +123,15 @@ Using the following array - test whether each letter a-z (case insensitive) is u
 
 ```js
 const panagram = [
-  "The",
-  "quick",
-  "brown",
-  "fox",
-  "jumps",
-  "over",
-  "the",
-  "lazy",
-  "dog",
+	'The',
+	'quick',
+	'brown',
+	'fox',
+	'jumps',
+	'over',
+	'the',
+	'lazy',
+	'dog',
 ];
 ```
 
@@ -142,55 +142,55 @@ const panagram = [
 
 ```js
 const products = [
-  {
-    name: "fairy lights",
-    price: 5.99,
-    description: "festive holiday decoration",
-  },
-  {
-    name: "banana",
-    price: 0.99,
-    description: "full of potassium",
-  },
-  {
-    name: "egg separator",
-    price: 3.99,
-    description: "it separates yolks from whites",
-  },
-  {
-    name: "flag",
-    price: 5.99,
-    description: "catches the breeze",
-  },
-  {
-    name: "quark",
-    price: 0.01,
-    description: "Very small",
-  },
-  {
-    name: "turtleneck",
-    price: 19.99,
-    description: "available in black and slightly-darker black",
-  },
-  {
-    name: "mitt (leather)",
-    price: 15,
-    description: "regulation sized",
-  },
-  {
-    name: "nothing",
-    price: 10,
-    description: "Hey, if you pay us, we won't ask any questions.",
-  },
-  {
-    name: "violin",
-    price: 2000,
-    description: "Talk about a JS fiddle...",
-  },
-  {
-    name: "yoyo",
-    price: 1,
-    description: "We had to pull some strings to get this one in.",
-  },
+	{
+		name: 'fairy lights',
+		price: 5.99,
+		description: 'festive holiday decoration',
+	},
+	{
+		name: 'banana',
+		price: 0.99,
+		description: 'full of potassium',
+	},
+	{
+		name: 'egg separator',
+		price: 3.99,
+		description: 'it separates yolks from whites',
+	},
+	{
+		name: 'flag',
+		price: 5.99,
+		description: 'catches the breeze',
+	},
+	{
+		name: 'quark',
+		price: 0.01,
+		description: 'Very small',
+	},
+	{
+		name: 'turtleneck',
+		price: 19.99,
+		description: 'available in black and slightly-darker black',
+	},
+	{
+		name: 'mitt (leather)',
+		price: 15,
+		description: 'regulation sized',
+	},
+	{
+		name: 'nothing',
+		price: 10,
+		description: "Hey, if you pay us, we won't ask any questions.",
+	},
+	{
+		name: 'violin',
+		price: 2000,
+		description: 'Talk about a JS fiddle...',
+	},
+	{
+		name: 'yoyo',
+		price: 1,
+		description: 'We had to pull some strings to get this one in.',
+	},
 ];
 ```

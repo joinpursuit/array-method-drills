@@ -1,73 +1,113 @@
 const { nums, words } = require("./data/data.js");
 
-// Every
-const isEveryNumGreaterThan2 = () => {
-  //
+/***************************************************
+ * Every
+ * The every() method tests whether all elements in the array pass the test implemented
+ * by the provided function. 
+ * It returns a Boolean value.
+ ***************************************************/ 
+const isEveryNumGreaterThan2 = (nums) => {
+  return nums.every(n => n >= 2);
 };
 
-const isEveryWordShorterThan7 = () => {
-  //
+const isEveryWordShorterThan7 = (words) => {
+  return words.every(w => w.length < 7);
 };
 
-// Filter
-
-const arrayLessThan5 = () => {
-  //
+/***************************************************
+ * Filter
+ * The filter() method creates a shallow copy of a portion of a given array, filtered 
+ * down to just the elements from the given array that pass the test implemented 
+ * by the provided function.
+ ***************************************************/
+const arrayLessThan5 = (nums) => {
+  return nums.filter(n => n < 5);  
 };
 
-const arrayOddLengthWords = () => {
-  //
+const arrayOddLengthWords = (words) => {
+  return words.filter(w => (w.length % 2 !== 0));
 };
 
-// Find
-
-const firstValDivisibleBy4 = () => {
-  //
+/***************************************************
+ * Find
+ * The find() method returns the first element in the provided array that satisfies 
+ * the provided testing function. If no values satisfy the testing function, 
+ * undefined is returned.
+ ***************************************************/
+const firstValDivisibleBy4 = (nums) => {
+  return nums.find(n => n % 4 === 0);
 };
 
-const firstWordLongerThan4Char = () => {
-  //
+const firstWordLongerThan4Char = (words) => {
+  return words.find(w => w.length > 4);
 };
 
-// Find Index
-
-const firstNumIndexDivisibleBy3 = () => {
-  //
+/***************************************************
+ * Find Index
+ * The findIndex() method returns the index of the first element in an array 
+ * that satisfies the provided testing function. If no elements satisfy the testing 
+ * function, -1 is returned.
+ ***************************************************/
+const firstNumIndexDivisibleBy3 = (nums) => {
+  return nums.findIndex(n => n % 3 === 0);
 };
 
-const firstWordIndexLessThan2Char = () => {
-  //
+const firstWordIndexLessThan2Char = (words) => {
+  return words.findIndex(w => w.length < 2);
 };
 
-// For Each
-
-const logValuesTimes3 = () => {
-  //
+/***************************************************
+ * For Each
+ * The forEach() method executes a provided function once for each array element.
+ * forEach expects a synchronous function.
+ * forEach does not wait for promises. Make sure you are aware of the implications 
+ * while using promises (or async functions) as forEach callback.
+ ***************************************************/
+const logValuesTimes3 = (nums) => {
+  return nums.forEach(n => n * 3);
 };
 
-const logWordsWithExclamation = () => {
-  //
+const logWordsWithExclamation = (words) => {
+  return words.forEach(w => `${w}!`);
 };
 
-// Map
-
-const arrayValuesSquaredTimesIndex = () => {
-  //
+/***************************************************
+ * Map
+ ***************************************************/
+const arrayValuesSquaredTimesIndex = (nums) => {
+  return nums.map((n,i) => (Math.pow(n,2)*i));
 };
 
-const arrayWordsUpcased = () => {
-  //
+const arrayWordsUpcased = (words) => {
+  return words.map(w => w.toUpperCase());
 };
 
-// Some
-
-const areSomeNumsDivisibleBy7 = () => {
-  //
+/***************************************************
+ * Some
+ ***************************************************/
+const areSomeNumsDivisibleBy7 = (nums) => {
+  return nums.some(n => (n % 7 === 0));
 };
 
-const doSomeWordsHaveAnA = () => {
-  //
+const doSomeWordsHaveAnA = (words) => {
+  return words.some(w => w.includes('a'));
 };
+
+/***************************************************
+ * Reduce
+ ***************************************************/
+ const addAllNumbers = (nums) => {
+  return nums.reduce((a,b) => a+b, 0);
+};
+
+console.log(addAllNumbers(nums));
+
+const concatenateAllWords = (words) => {
+  return words.reduce((a,b) => `${a} ${b}`);
+};
+
+console.log(concatenateAllWords(words));
+
 
 module.exports = {
   isEveryNumGreaterThan2,
