@@ -27,7 +27,7 @@ const firstValDivisibleBy4 = (nums) => {
 	});
 };
 
-const firstWordLongerThan4Char = () => {
+const firstWordLongerThan4Char = (words) => {
 	return words.find((word) => word.length > 4);
 };
 
