@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node solution.js",
     "test": "jest --runInBand",
     "watch": "jest --watchAll"
   },
