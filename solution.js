@@ -21,12 +21,14 @@ const arrayOddLengthWords = (words) => {
 
 // Find
 
-const firstValDivisibleBy4 = () => {
-	//
+const firstValDivisibleBy4 = (nums) => {
+	return nums.find((num) => {
+		if (num % 4 === 0) return num;
+	});
 };
 
 const firstWordLongerThan4Char = () => {
-	//
+	return words.find((word) => word.length > 4);
 };
 
 // Find Index
