@@ -84,7 +84,9 @@ const concatAllWords = (words) =>
 const sortNumsNoArgs = (nums) => nums.sort();
 // `words` without arguments -
 const sortWordsNoArgs = (words) => words.sort();
-console.log(sortWordsNoArgs(words));
+
+// `numbers` in ascending order
+const sortNumsAscending = (nums) => nums.sort((a, b) => a - b);
 
 module.exports = {
 	isEveryNumGreaterThan2,
