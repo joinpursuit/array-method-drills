@@ -119,6 +119,41 @@ const sortWordsDescending = (words) => {
 	});
 };
 
+// Array Methods Challenge Problems -
+
+// isPanagram
+
+const isPanagram = (panagram) => {
+	if (!panagram || panagram.length < 1 || Array.isArray(panagram) === false)
+		return 'Please enter a valid array with at least one string!';
+
+	const charCounter = (words) => {
+		const chars = words.join('').toLowerCase();
+		const charCount = {};
+
+		for (let char of chars) {
+			char = char.replace(/[^a-z]/gi, '');
+			charCount[char] = (charCount[char] || 0) + 1;
+		}
+
+		return charCount;
+	};
+
+	const isEachCharAtLeastOnce = (charObj) => {
+		const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+		const chars = Object.keys(charObj);
+
+		for (let letter of alphabet) {
+			if (!chars.includes(letter)) {
+				return false;
+			}
+		}
+		return true;
+	};
+
+	return isEachCharAtLeastOnce(charCounter(panagram));
+};
+
 module.exports = {
 	isEveryNumGreaterThan2,
 	isEveryWordShorterThan7,
