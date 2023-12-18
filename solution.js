@@ -93,6 +93,19 @@ const sortNumsAscending = (nums) => nums.sort((a, b) => a - b);
 // `numbers` in descending order
 const sortNumsDescending = (nums) => nums.sort((a, b) => b - a);
 
+// `words` in ascending order
+const sortWordsAscending = (words) => {
+	return words.sort((a, b) => {
+		if (a > b) {
+			return 1;
+		} else if (a < b) {
+			return -1;
+		} else {
+			return 0;
+		}
+	});
+};
+
 module.exports = {
 	isEveryNumGreaterThan2,
 	isEveryWordShorterThan7,
