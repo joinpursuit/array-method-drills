@@ -79,6 +79,13 @@ const sumAllNums = (nums) => nums.reduce((sum, num) => sum + num, 0);
 const concatAllWords = (words) =>
 	words.reduce((concatWord, word) => concatWord + word, '');
 
+// Sort
+// `numbers` without arguments - I knew that I would get a lexicographical sort.
+const sortNumsNoArgs = (nums) => nums.sort();
+// `words` without arguments -
+const sortWordsNoArgs = (words) => words.sort();
+console.log(sortWordsNoArgs(words));
+
 module.exports = {
 	isEveryNumGreaterThan2,
 	isEveryWordShorterThan7,
