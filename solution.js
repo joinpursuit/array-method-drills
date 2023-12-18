@@ -165,6 +165,22 @@ const productsWithPriceLessThanTen = (products) => {
 	return products.filter((product) => Number.parseFloat(product.price) < 10);
 };
 
+// sort alphabetically by product name
+const sortAlphabeticallyByProductName = (products) => {
+	if (!products || products.length < 1 || Array.isArray(products) === false)
+		return 'Please enter a valid array with at least one object!';
+
+	return products.sort((a, b) => {
+		if (a.name > b.name) {
+			return 1;
+		} else if (a.name < b.name) {
+			return -1;
+		} else {
+			return 0;
+		}
+	});
+};
+
 module.exports = {
 	isEveryNumGreaterThan2,
 	isEveryWordShorterThan7,
