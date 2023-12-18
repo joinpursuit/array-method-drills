@@ -73,8 +73,8 @@ You don't have to write an answer to the thought questions.
 
 **Thought Questions**
 
-- What happened to the original array?
-- Can you store the values from a `forEach` method in a new array?
+- What happened to the original array? nothing
+- Can you store the values from a `forEach` method in a new array? yes
 
 #### Map
 
@@ -83,9 +83,9 @@ You don't have to write an answer to the thought questions.
 
 **Thought Questions**
 
-- What happened to the original array?
+- What happened to the original array? nothing
 - Can you store the values from a `map` method in a new array?
-
+yes
 #### Some
 
 - Find out if some numbers are divisible by 7
