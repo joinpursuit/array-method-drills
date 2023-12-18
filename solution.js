@@ -80,13 +80,18 @@ const concatAllWords = (words) =>
 	words.reduce((concatWord, word) => concatWord + word, '');
 
 // Sort
+
 // `numbers` without arguments - I knew that I would get a lexicographical sort.
 const sortNumsNoArgs = (nums) => nums.sort();
+
 // `words` without arguments -
 const sortWordsNoArgs = (words) => words.sort();
 
 // `numbers` in ascending order
 const sortNumsAscending = (nums) => nums.sort((a, b) => a - b);
+
+// `numbers` in descending order
+const sortNumsDescending = (nums) => nums.sort((a, b) => b - a);
 
 module.exports = {
 	isEveryNumGreaterThan2,
