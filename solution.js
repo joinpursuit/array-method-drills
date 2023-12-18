@@ -1,4 +1,4 @@
-const { nums, words } = require('./data/data.js');
+const { nums, words, products } = require('./data/data.js');
 
 // Every
 const isEveryNumGreaterThan2 = (nums) => {
@@ -152,6 +152,17 @@ const isPanagram = (panagram) => {
 	};
 
 	return isEachCharAtLeastOnce(charCounter(panagram));
+};
+
+// Working with data
+
+// filter for products with a price that is less than 10
+
+const productsWithPriceLessThanTen = (products) => {
+	if (!products || products.length < 1 || Array.isArray(products) === false)
+		return 'Please enter a valid array with at least one object!';
+
+	return products.filter((product) => Number.parseFloat(product.price) < 10);
 };
 
 module.exports = {
