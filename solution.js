@@ -106,6 +106,19 @@ const sortWordsAscending = (words) => {
 	});
 };
 
+// `words` in descending order
+const sortWordsDescending = (words) => {
+	return words.sort((a, b) => {
+		if (a > b) {
+			return -1;
+		} else if (a < b) {
+			return 1;
+		} else {
+			return 0;
+		}
+	});
+};
+
 module.exports = {
 	isEveryNumGreaterThan2,
 	isEveryWordShorterThan7,
