@@ -1,23 +1,28 @@
 const { nums, words } = require("./data/data.js");
 
 // Every
-const isEveryNumGreaterThan2 = () => {
+const isEveryNumGreaterThan2 = nums => nums.every((num) => {
   //
-};
+  return num >= 2;
+});
 
-const isEveryWordShorterThan7 = () => {
+const isEveryWordShorterThan7 = words => words.every((word) => {
   //
-};
+    return word.length < 7
+});
 
 // Filter
 
-const arrayLessThan5 = () => {
+const arrayLessThan5 = nums => nums.filter((num) => {
   //
-};
+  return num < 5
+});
 
-const arrayOddLengthWords = () => {
+const arrayOddLengthWords = words => words.filter((word) => {
   //
-};
+  const oddLength = word.length % 2 === 1
+  return word.length === oddLength;
+})
 
 // Find
 
@@ -41,12 +46,15 @@ const firstWordIndexLessThan2Char = () => {
 
 // For Each
 
-const logValuesTimes3 = () => {
+const logValuesTimes3 = nums =>  nums.forEach((num) => {
   //
-};
+  const times3 = num * 3
+  return console.log(times3);
+});
 
-const logWordsWithExclamation = () => {
+const logWordsWithExclamation = words => words.forEach(word) => {
   //
+    word.
 };
 
 // Map
@@ -55,9 +63,10 @@ const arrayValuesSquaredTimesIndex = () => {
   //
 };
 
-const arrayWordsUpcased = () => {
+const arrayWordsUpcased = words =>  words.map((word) => {
   //
-};
+    return word.toUpperCase()
+}) 
 
 // Some
 
