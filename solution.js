@@ -18,52 +18,58 @@ const arrayLessThan5 = (nums) =>
 		return num < 5;
 	});
 
-const arrayOddLengthWords = (words) => {
-	for (const words of words) {
-		console.log(word.length);
-	}
-	const oddLength = wordLength % 2 === 1;
-	words.filter((word) => {
-		return wordLength === oddLength;
-	});
+const arrayOddLengthWords = ( words ) =>
+{
+	words. filter( ( word ) =>
+	{
+		const oddWordLength = word.length % 2 === 1;
+		console.log(oddWordLength);
+		if (word.length === oddWordLength) {
+			return word
+		}
+		return oddWordLength
+	} );
 };
 
 //Find
 
-const firstValDivisibleBy4 = (nums) =>
-	nums.find((num) => {
-		const divisibleBy4 = (num) => {
-			if (num / 4) {
-				return num;
-			}
-			return divisibleBy4;
-		};
-		return divisibleBy4;
-	});
+const firstValDivisibleBy4 = ( nums ) =>
+	nums.find( ( num ) =>
+	{
+		const divisibleBy4 = (num / 4);
+		if (divisibleBy4) {
+			return num
+		}
+		return divisibleBy4
+	} )
+		
 
 const firstWordLongerThan4Char = (words) =>
 	words.find((word) => {
-		const wordLongerThan4 = (word) => {
-			if (word.length > 4) {
+		const wordLongerThan4 = word.length > 4
+		if (wordLongerThan4) {
 				return word;
 			}
-		};
+		
 		return wordLongerThan4;
 	});
 
 //Find Index
 
 const firstNumIndexDivisibleBy3 = (nums) =>
-	nums.findIndex((num) => {
-		const divisibleBy3 = num / 3;
-		return divisibleBy3;
+	nums.findIndex( ( num , ) =>
+	{ 
+		const divisibleBy3 = (num / 3);
+		if (divisibleBy3) {
+			return num
+		}
 	});
 
 const firstWordIndexLessThan2Char = (words) =>
 	words.findIndex( ( word ) =>
 	{
 		const length = word.length;
-		const less2CharWord = word.length < 2;
+		const less2CharWord = length < 2;
 		return less2CharWord;
 	});
 
@@ -85,8 +91,8 @@ const logWordsWithExclamation = (words) =>
 
 const arrayValuesSquaredTimesIndex = (nums) =>
 	nums.map((num, i) => {
-		const numIndex = nums[i];
-		const squaredNum = Math.pow(num, 3);
+		const numIndex = num[i];
+		const squaredNum = num * num;
 		const result = squaredNum * numIndex;
 		return result;
 	});
@@ -103,7 +109,10 @@ const areSomeNumsDivisibleBy7 = (nums) =>
 		return num / 7;
 	});
 
-const doSomeWordsHaveAnA = (words) => words.some((word) => {});
+const doSomeWordsHaveAnA = ( words ) => words.some( ( word ) =>
+{
+	
+});
 
 module.exports = {
 	isEveryNumGreaterThan2,
