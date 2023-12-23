@@ -20,28 +20,23 @@ const arrayLessThan5 = (nums) =>
 
 const arrayOddLengthWords = ( words ) =>
 {
-	words. filter( ( word ) =>
+	function oddWordLength ( word )
 	{
-		const oddWordLength = word.length % 2 === 1;
-		console.log(oddWordLength);
-		if (word.length === oddWordLength) {
-			return word
-		}
-		return oddWordLength
-	} );
-};
+		return word.length % 2 === 1;
+	}
 
+	const result = words.filter( (word) => oddWordLength( word ) );
+	return result;
+}
 //Find
 
 const firstValDivisibleBy4 = ( nums ) =>
-	nums.find( ( num ) =>
-	{
-		const divisibleBy4 = (num / 4);
-		if (divisibleBy4) {
-			return num
-		}
-		return divisibleBy4
-	} )
+{
+	const divisibleBy4 = ( ( num ) => num % 4 );
+	
+	nums.find( ( num ) => divisibleBy4(num))	
+}
+	
 		
 
 const firstWordLongerThan4Char = (words) =>
@@ -56,14 +51,14 @@ const firstWordLongerThan4Char = (words) =>
 
 //Find Index
 
-const firstNumIndexDivisibleBy3 = (nums) =>
-	nums.findIndex( ( num , ) =>
-	{ 
-		const divisibleBy3 = (num / 3);
-		if (divisibleBy3) {
-			return num
-		}
-	});
+const firstNumIndexDivisibleBy3 = ( nums ) =>
+{
+	const divisibleBy3 = ( ( num ) => num % 3 );
+
+	nums.findIndex( ( num ) => divisibleBy3(num));
+}
+	
+	
 
 const firstWordIndexLessThan2Char = (words) =>
 	words.findIndex( ( word ) =>
@@ -90,11 +85,9 @@ const logWordsWithExclamation = (words) =>
 //Map
 
 const arrayValuesSquaredTimesIndex = (nums) =>
-	nums.map((num, i) => {
-		const numIndex = num[i];
-		const squaredNum = num * num;
-		const result = squaredNum * numIndex;
-		return result;
+	nums.map( ( num, i ) =>
+	{
+		return Math.pow( num, 2 ) * [ i ];
 	});
 
 const arrayWordsUpcased = (words) =>
@@ -111,7 +104,7 @@ const areSomeNumsDivisibleBy7 = (nums) =>
 
 const doSomeWordsHaveAnA = ( words ) => words.some( ( word ) =>
 {
-	
+	return word.includes( 'a' );
 });
 
 module.exports = {
