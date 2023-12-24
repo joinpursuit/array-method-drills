@@ -18,51 +18,51 @@ const arrayLessThan5 = (nums) =>
 		return num < 5;
 	});
 
-const arrayOddLengthWords = ( words ) =>
-{
-	function oddWordLength ( word )
-	{
+const arrayOddLengthWords = (words) => {
+	function oddWordLength(word) {
 		return word.length % 2 === 1;
 	}
 
-	const result = words.filter( (word) => oddWordLength( word ) );
+	const result = words.filter((word) => oddWordLength(word));
 	return result;
-}
+};
 //Find
 
-const firstValDivisibleBy4 = ( nums ) =>
-{
-	const divisibleBy4 = ( ( num ) => num % 4 );
+const firstValDivisibleBy4 = (nums) => {
+	function divisibleBy4(num) {
+			return num % 4 === 0  
+	}
+
 	
-	nums.find( ( num ) => divisibleBy4(num))	
-}
 	
-		
+	const result = nums.find( ( num ) => divisibleBy4( num ) );
+	
+	return result;
+};
 
 const firstWordLongerThan4Char = (words) =>
 	words.find((word) => {
-		const wordLongerThan4 = word.length > 4
+		const wordLongerThan4 = word.length > 4;
 		if (wordLongerThan4) {
-				return word;
-			}
-		
+			return word;
+		}
+
 		return wordLongerThan4;
 	});
 
 //Find Index
 
-const firstNumIndexDivisibleBy3 = ( nums ) =>
-{
-	const divisibleBy3 = ( ( num ) => num % 3 );
-
-	nums.findIndex( ( num ) => divisibleBy3(num));
-}
+const firstNumIndexDivisibleBy3 = (nums) => {
+	function divisibleBy3 (num) {
+		return num % 3 === 0
+	}
+	const result = nums.findIndex( ( num ) => divisibleBy3( num ) );
 	
-	
+	return result;
+};
 
 const firstWordIndexLessThan2Char = (words) =>
-	words.findIndex( ( word ) =>
-	{
+	words.findIndex((word) => {
 		const length = word.length;
 		const less2CharWord = length < 2;
 		return less2CharWord;
@@ -85,9 +85,8 @@ const logWordsWithExclamation = (words) =>
 //Map
 
 const arrayValuesSquaredTimesIndex = (nums) =>
-	nums.map( ( num, i ) =>
-	{
-		return Math.pow( num, 2 ) * [ i ];
+	nums.map((num, i) => {
+		return Math.pow(num, 2) * [i];
 	});
 
 const arrayWordsUpcased = (words) =>
@@ -102,10 +101,10 @@ const areSomeNumsDivisibleBy7 = (nums) =>
 		return num / 7;
 	});
 
-const doSomeWordsHaveAnA = ( words ) => words.some( ( word ) =>
-{
-	return word.includes( 'a' );
-});
+const doSomeWordsHaveAnA = (words) =>
+	words.some((word) => {
+		return word.includes("a");
+	});
 
 module.exports = {
 	isEveryNumGreaterThan2,
