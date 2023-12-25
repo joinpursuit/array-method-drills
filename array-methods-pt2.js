@@ -17,4 +17,6 @@ const reduceWords = ( words ) =>
 	})
 };
 
-console.log(reduceWords(words));
+console.log( reduceWords( words ) );
+
+// Sort
